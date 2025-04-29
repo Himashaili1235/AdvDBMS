@@ -10,6 +10,9 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 ### 🔒 Secure Authentication & Access Control
 - **SHA-256 Hashing with Salt** for secure password storage.
 - **Multi-Factor Authentication (MFA)** enhances security.
+   - Using Mailtrap for testing OTP authentication. https://mailtrap.io
+   - After logging in copy the host, username, password in the code login.php.
+   - Now when user tries to login in SGA it would send the verification OTP to mailtrap.io
 - **Role-Based Access Control (RBAC):**
   - **Students:** View grades only.
   - **Professors:** Input and update grades.
