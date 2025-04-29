@@ -88,7 +88,7 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 ## Running the Application
 - Start Apache and MySQL services in XAMPP.
 - Place the project folder in the htdocs directory.
-- Open the application in your browser at http://localhost/main.php
+- Open the application in your browser at http://localhost/sga.php
 
 ---
 
