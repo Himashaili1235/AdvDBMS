@@ -67,18 +67,17 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 
 ## 🚀 Setup Instructions
 
-### Prerequisites
-1. Install **MySQL Workbench** for database management.
-2. Install **XAMPP**
-3. Install **Visual Studio Code** or any preferred IDE.
+### Prerequisites.
+1. Install **XAMPP** for the local server environment.
+2. Install **Visual Studio Code** or any preferred IDE.
 
 ### Database Configuration
 1. Import the provided **SQL file** into MySQL Workbench to create the necessary tables.
 2. Update database connection settings in the backend:
    $host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'sga';
+  $username = 'root';
+  $password = '';
+  $database = 'sga';
 
 
 ## Running the Application
