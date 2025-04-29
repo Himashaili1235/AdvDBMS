@@ -95,7 +95,7 @@ $database = 'sga';
 - **Geolocation-Based Alerts:** Secure access based on device locations. 
 - **Add Notficatiobs:** Send alerts for new grades, logins or any system changes.
 - **Improve Dashboard:** Show charts and stats about student performance.
-- **AES Data Encryption:**
+- **AES Data Encryption:** secures student grades from unauthorized access.
 
 ---
 
