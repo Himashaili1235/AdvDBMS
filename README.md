@@ -45,9 +45,9 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 | Component  | Technology  |
 |------------|------------|
 | **Frontend** | HTML, CSS, JavaScript |
-| **Backend** | Node.js, Express |
+| **Backend** | PHP |
 | **Database** | MySQL (MySQL Workbench) |
-| **Development Tools** | Visual Studio Code |
+| **Development Tools** | Visual Studio Code | XAMPP |
 
 ---
 
@@ -55,10 +55,13 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 
 | Table  | Columns  |
 |--------|---------|
-| **Users** | UserID, Name, Role (Student, Professor, Admin), Email, Password |
-| **Grades** | GradeID, StudentID, CourseID, Grade, EncryptedGrade |
-| **AuditLog** | LogID, UserID, Action, Timestamp |
-| **Courses** | CourseID, CourseName, ProfessorID |
+| **Users** | UserID, Name, Role (Student, Professor, Admin), Email, Password, otpCode, otp_expires |
+| **Grades** | GradeID, StudentID, CourseID, Grade, EncryptedGrade, grade_label |
+| **roles** | role_id, role_name |
+| **AuditLog** | LogID, UserID, Action, Timestamp, recordID, timestamp |
+| **Courses** | CourseID, CourseName, CourseCode, ProfessorID, created_at |
+| **Enrollments** | enrollmentID, studentID, courseID, enrolledAt |
+| **GradeOptions** | gradeID, gradeLabel |
 
 ---
 
@@ -66,7 +69,7 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 
 ### Prerequisites
 1. Install **MySQL Workbench** for database management.
-2. Install **Node.js** and **npm**.
+2. Install **XAMPP**
 3. Install **Visual Studio Code** or any preferred IDE.
 
 ### Database Configuration
@@ -82,20 +85,10 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
    });
    ```
 
-### Running the Application
-1. Start **MySQL** and ensure the database is running.
-2. Navigate to the project directory and install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the backend server:
-   ```sh
-   node server.js
-   ```
-4. Open the application in your browser at:
-   ```
-   http://localhost:3000
-   ```
+## Running the Application
+- Start Apache and MySQL services in XAMPP.
+- Place the project folder in the htdocs directory.
+- Open the application in your browser at http://localhost/main.php
 
 ---
 
@@ -103,7 +96,10 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 - **Blockchain Integration:** Securely manage data transactions and records.
 - **AI-Based Anomaly Detection:** Identify unusual grading patterns.
 - **Mobile Application:** Provide access on-the-go for students and faculty.
-- **Geolocation-Based Alerts:** Secure access based on device locations.
+- **Geolocation-Based Alerts:** Secure access based on device locations. 
+- **Add Notficatiobs:** Send alerts for new grades, logins or any system changes.
+- **Improve Dashboard:** Show charts and stats about student performance.
+- **AES Data Encryption:**
 
 ---
 
