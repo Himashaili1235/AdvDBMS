@@ -75,15 +75,11 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
 ### Database Configuration
 1. Import the provided **SQL file** into MySQL Workbench to create the necessary tables.
 2. Update database connection settings in the backend:
-   ```javascript
-   const mysql = require('mysql');
-   const connection = mysql.createConnection({
-       host: 'localhost',
-       user: 'root',
-       password: '',
-       database: 'SGS'
-   });
-   ```
+   $host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'sga';
+
 
 ## Running the Application
 - Start Apache and MySQL services in XAMPP.
