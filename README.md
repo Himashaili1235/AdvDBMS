@@ -18,19 +18,6 @@ The **Secure Student Grading Management System (SGS)** is a web-based platform d
   - **Professors:** Input and update grades.
   - **Admins:** Manage system operations.
 
-### 🔐 Data Encryption for Protection
-- **AES-256 Encryption** secures student grades from unauthorized access.
-- **Data-at-Rest Encryption:** Grades stored in encrypted format.
-- **Data-in-Transit Encryption (TLS/SSL):** Prevents interception during transmission.
-- **Implementation:**
-  ```sql
-  -- Encrypting data
-  AES_ENCRYPT('A', 'key')
-  
-  -- Decrypting data
-  AES_DECRYPT(grade, 'key')
-  ```
-
 ### 📊 Audit Logging & Monitoring
 - Tracks **all user actions** (logins, grade updates, unauthorized access attempts).
 - **Real-time alerts** for suspicious activities.
